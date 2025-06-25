@@ -1,0 +1,1 @@
+rsync -e "ssh -i ~/.ssh/wpengine_ed25519 -o IdentitiesOnly=yes" -av --exclude=".*" "/Users/syd/Local Sites/pwc/app/public/wp-content/plugins/pw-carpets/" pwcarpets@pwcarpets.ssh.wpengine.net:/home/wpe-user/sites/pwcarpets/wp-content/plugins/pw-carpets
