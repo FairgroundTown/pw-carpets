@@ -23,19 +23,19 @@ add_action('wp_head', function()
             }
         </style>
     <?php
-    if (is_product()) 
-    {
-        global $product;
-        $terms = wc_get_product_terms($product->get_id(), 'product_cat');
-        foreach ($terms as $term)
-        {
-            if($term->slug == 'vip')
-            {
-                pwc_vip_code('vip123');
-                break;
-            }
-        }
-    }
+    // if (is_product()) 
+    // {
+    //     global $product;
+    //     $terms = wc_get_product_terms($product->get_id(), 'product_cat');
+    //     foreach ($terms as $term)
+    //     {
+    //         if($term->slug == 'vip')
+    //         {
+    //             pwc_vip_code('vip123');
+    //             break;
+    //         }
+    //     }
+    // }
 });
 
 add_filter( 'body_class', function( $classes ) 
